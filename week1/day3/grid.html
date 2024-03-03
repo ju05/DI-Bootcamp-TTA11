@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* GRID "REGULAR" */
+        /* .container{
+            display: grid;
+            gap: 10px 5px;
+            grid-template-rows: 50px repeat(2, 150px);
+            grid-template-columns: repeat(3, 2em 3em);
+        }
+
+        .blue{
+            background-color: blue;
+            grid-row: 2 / span 2;
+            grid-column: 1 /span 4;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: rgba(255, 255, 0, 0.271);
+            grid-row: 2 / span 1;
+            grid-column: 1 /span 2;
+            
+        } */
+
+        /* GRID TEMPLATE AREA */
+
+        .container{
+            display: grid;
+            gap: 10px 5px;
+            grid-template-rows: repeat(4, 150px);
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+            'a a a'
+            'b b c'
+            'b b c'
+            'd d d';
+        }
+
+        /* .blue{
+            background-color: blue;
+            grid-area: a;
+        }
+        .red{
+            background-color: red;
+            grid-area: b;
+
+        }
+        .green{
+            background-color: green;
+            grid-area: c;
+
+        }
+        .yellow{
+            background-color: yellow;
+            grid-area: d; */
+
+            
+        } 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+</html>

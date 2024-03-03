@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 100vh;
+            width: 50%;
+            background-color: grey;
+            display: flex; /*default: row  */
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* align-content: space-between; */
+        }
+
+        .item{
+            height: 50px;
+            width: 10%;
+            margin: 5px;
+            background-color: yellow;
+
+        }
+
+        .one{
+            /* align-self: flex-start; */
+            /* order: 1; */
+        }
+
+       
+
+        .three{
+            /* align-self: flex-end; */
+            /* order: -1; */
+            flex: 2 2 15%
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="item one">A</div>
+        <div class="item two">B</div>
+        <div class="item three">C</div>
+        <div class="item four">D</div>
+    </div>
+</body>
+</html>
