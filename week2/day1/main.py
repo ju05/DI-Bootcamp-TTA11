@@ -12,8 +12,7 @@
 # print('hello world python'.replace('python', 'javascript'))
 # print('hello world\' python \n' * 10)
 
-#numbers
-# two types: int and float
+#numbers: int and float
 
 #integers
 # print(type(5))
